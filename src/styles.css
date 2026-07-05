@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	padding: 2rem;
+}
+
+h1 {
+	margin: 1rem 0;
+}
+
+label {
+	display: block;
+	width: max-content;
+	margin: 0.3rem 0;
+}
+
+input {
+	padding: 0.3rem;
+}
+
+p {
+	color: #6f6f6f;
+	margin: 0.3rem 0;
+}
+
+form {
+	margin: 1rem 0;
+}
+
+section {
+	margin: 1rem 0;
+	padding: 1rem 0;
+	border-bottom: 1px solid #ccc;
+}
+
+img {
+	margin: 0.5rem 0;
+}
