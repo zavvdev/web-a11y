@@ -107,6 +107,26 @@ export function ViewA11yVisuallyImpaired() {
 					Always use button tag.
 				</p>
 			</section>
+			<section>
+				<h2>Aria Atomic & Aria Relevant</h2>
+				<p>
+					Both aria-atomic and aria-relevant control how ARIA live regions
+					announce updates to screen readers. They only matter when used
+					together with aria-live.
+				</p>
+				<p>
+					<b>aria-atomic</b> - Controls whether the entire live region is
+					announced when something changes. "true" - Announce the whole region
+					every time anything changes, "false" - Announce only the changed part
+					(default).
+				</p>
+				<p>
+					<b>aria-relevant</b> - Controls which types of DOM changes trigger
+					announcements. "additions" - New nodes added, "removals" - Nodes
+					removed, "text" - Text content changes, "all" - everything from above.
+					Default is "additions text"
+				</p>
+			</section>
 		</div>
 	);
 }

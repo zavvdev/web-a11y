@@ -43,6 +43,33 @@ export function ViewA11yKeyboard() {
 					:focus-visible css property.
 				</p>
 			</section>
+			<section>
+				<h2>Autocomplete</h2>
+				<p>
+					Controls whether and how the browser should suggest previously entered
+					or stored values (like email, address, passwords, etc.). Common
+					values: email, name, given-name, family-name, username.
+				</p>
+				<input name="email" autocomplete="email" />
+			</section>
+			<section>
+				<h2>Inert Content</h2>
+				<p>
+					When you have some html elements that are focusable but not
+					immediately visible (like modals), they can still capture focus when
+					user uses Tab which can lead to confusion because focus is literally
+					not visible. We can use "inert=boolean" property in order to make
+					screen readers ignore it while it's closed. You can also set inert for
+					the background when modal is open so it's not focusable.
+				</p>
+				<div>
+					<button type="button">Save</button>
+				</div>
+				<div inert role="dialog">
+					<p>Inert modal content</p>
+					<button type="button">Close</button>
+				</div>
+			</section>
 		</div>
 	);
 }
